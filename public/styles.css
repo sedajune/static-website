@@ -3,11 +3,73 @@
  */
 body {
 	margin: 0;
+	background-color: #e5e5e5;
 }
-
 *,
 *::before,
 *::after {
 	box-sizing: border-box;
 }
 
+.hero-landscape {
+	background-image: url("/images/website-hero-desktop.png");
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+}
+
+.hero-mobile {
+	#background-image: url("/images/website-hero-mobile.png");
+	height: 400px;
+	background-size: cover;
+	background-position: center;
+}
+
+.head-one {
+	position: absolute;
+	width: 1312px;
+	height: 84px;
+	left: 64px;
+	bottom: 240px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 72px;
+	line-height: 84px;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+.random-name {
+	position: absolute;
+	width: 278px;
+	height: 42px;
+	left: 64px;
+	bottom: 166px;
+
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 42px;
+
+	color: #ffffff;
+}
+. div {
+	background: #e5e5e5;
+}
+
+@media (orientation: landscape) {
+	body {
+		background-image: url(/images/website-hero-desktop.png);
+		flex-direction: row;
+	}
+}
+
+@media (orientation: portrait) {
+	body {
+		background-image: url(/images/website-hero-mobile.png);
+		flex-direction: column;
+	}
+}
